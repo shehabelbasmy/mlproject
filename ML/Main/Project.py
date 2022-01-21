@@ -50,17 +50,8 @@ data_classification = (X,y)
 
 moon = make_moons(n_samples = n_samples, noise = noise_moon, random_state = random_state)
 
-#data = pd.DataFrame(moon[0])
-#data["target"] = moon[1]
-#plt.figure()
-#sns.scatterplot(x = data.iloc[:,0], y =  data.iloc[:,1], hue = "target", data = data ) #visualization, 
-
 circle = make_circles(n_samples = n_samples, factor = 0.1,  noise = noise_circle, random_state = random_state)
 
-#data = pd.DataFrame(circle[0])
-#data["target"] = circle[1]
-#plt.figure()
-#sns.scatterplot(x = data.iloc[:,0], y =  data.iloc[:,1], hue = "target", data = data ) #visualization, 
 datasets = [moon, circle]
  
 # Basic Classifiers : KNN, SVM, DT
